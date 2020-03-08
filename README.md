@@ -4,11 +4,21 @@
 
 ![Short movie showing tab completion in Zsh for dotnet CLI](demo.gif)
 
-This is basically just a wrapper for the instructions found at [How to enable TAB completion for the .NET Core CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/enable-tab-autocomplete#zsh) by Microsoft.
-
-The structure of this repo was inspired by [zsh-better-npm-completion](https://github.com/lukechilds/zsh-better-npm-completion) by Luke Childs, from which I also copied all the installation instructions.
-
 ## Installation
+
+### Manually
+
+Clone this repository somewhere (`~/.zsh-dotnet-completion` for example)
+
+```shell
+git clone https://github.com/memark/zsh-dotnet-completion.git ~/.zsh-dotnet-completion
+```
+
+Then source it in your `.zshrc`
+
+```shell
+source ~/.zsh-dotnet-completion/zsh-dotnet-completion.plugin.zsh
+```
 
 ### Using [Antigen](https://github.com/zsh-users/antigen)
 
@@ -48,19 +58,11 @@ Then load as a plugin in your `.zshrc`
 plugins+=(zsh-dotnet-completion)
 ```
 
-### Manually
+## Credits
 
-Clone this repository somewhere (`~/.zsh-dotnet-completion` for example)
+The plugin is based on the instructions found at [How to enable TAB completion for the .NET Core CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/enable-tab-autocomplete#zsh).
 
-```shell
-git clone https://github.com/memark/zsh-dotnet-completion.git ~/.zsh-dotnet-completion
-```
-
-Then source it in your `.zshrc`
-
-```shell
-source ~/.zsh-dotnet-completion/zsh-dotnet-completion.plugin.zsh
-```
+The structure of this page was inspired by [zsh-better-npm-completion](https://github.com/lukechilds/zsh-better-npm-completion) by Luke&nbsp;Childs, from which I also borrowed the installation instructions.
 
 ## License
 
